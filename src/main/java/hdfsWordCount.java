@@ -9,7 +9,7 @@ import scala.Tuple2;
 public class hdfsWordCount {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SparkConf conf = new SparkConf().setMaster("local").setAppName("hdfsWordCount"); 
+		SparkConf conf = new SparkConf().setMaster("local[2]").setAppName("hdfsWordCount"); 
 		JavaSparkContext sc = new JavaSparkContext(conf);
 		//JavaSparkContext spark = new JavaSparkContext(new SparkConf().setAppName("Word Count"));
 		
